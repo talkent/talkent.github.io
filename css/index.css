@@ -1,0 +1,134 @@
+a {
+  text-decoration: none;
+}
+
+.nav-link-item {
+  cursor: pointer;
+  /* transition: all 0.3s; */
+}
+
+.nav-link-item:hover {
+  color: #c006e6;
+  border-bottom: 2px solid #c006e6;
+}
+
+.login-center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-section {
+  height: 100vh;
+  max-width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-row {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #023536;
+  border-radius: 0.5rem;
+  padding: 5rem 2.5rem;
+}
+
+.login-brand-box {
+  display: flex;
+  justify-content: center;
+}
+
+.login-brand {
+  color: #77008f;
+  font-size: 2.5rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.login-err-msg {
+  color: red;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.label {
+  margin-top: 1rem;
+}
+
+.register-link {
+  margin: 1.2rem 0 0.3rem 0;
+  font-size: 0.8rem;
+}
+
+.login-link {
+  margin: 1.2rem 0 0.3rem 0;
+  font-size: 0.8rem;
+}
+
+.submit-login-btn {
+  color: #fff;
+  background-color: #008000;
+  border: none;
+  padding: 0.4rem 0;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.input-login-box {
+  padding: 0.2rem 1rem;
+  direction: ltr;
+}
+
+.submit-login-btn:hover {
+  background-color: #03c503;
+}
+
+.none-display {
+  display: none;
+}
+
+.display-content {
+  display: block;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-row {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #023536;
+  border-radius: 0.5rem;
+  padding: 3.5rem 2.5rem;
+}
+
+#logout-submit {
+  transition: all 0.3s;
+  background-color: #da0a0a;
+}
+
+#logout-submit:hover {
+  background-color: #ff2828;
+}
+
+.login-nav-btn {
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #77008f;
+}
+
+.login-name {
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #77008f;
+}

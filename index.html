@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- vazir font -->
+    <link rel="stylesheet" href="./css/font.css">
+    <title>خانه</title>
+</head>
+
+<body style="font-family: vazir;">
+    <div class="container">
+        <!-- navbar -->
+        <section class="landing mt-3">
+            <nav class="navbar">
+                <div class="side-right">
+                    <ul class="d-flex list-inline">
+                        <li class="mx-2 fs-5 home nav-link-item home-link">خانه</li>
+                        <li class="mx-2 fs-5 posts nav-link-item">پست ها</li>
+                        <li class="mx-2 fs-5 about-us nav-link-item">درباره ما</li>
+                        <li class="mx-2 fs-5 contact nav-link-item">ارتباط باما</li>
+                    </ul>
+                </div>
+                <div class="side-left">
+                    <button class="login-nav-btn">ورود به حساب</button>
+                    <button class="login-name"></button>
+                </div>
+            </nav>
+        </section>
+
+        <!-- login -->
+        <section class="login login-section">
+            <div class="login-row">
+                <div class="login-brand-box">
+                    <a class="login-brand">Talkent</a>
+                </div>
+                <label for="" class="label">شماره همراه</label>
+                <input type="text" class="input-login-box" name="login_phone_number">
+                <label for="" class="label">رمز عبور</label>
+                <input type="password" class="input-login-box" name="login_password">
+                <a href="#" class="register-link">ایجاد حساب</a>
+                <input id="login-submit" type="submit" value="ورود" class="submit-login-btn">
+                <span class="login-err-msg"></span>
+            </div>
+        </section>
+
+        <!-- register -->
+        <section class="register login-section">
+            <div class="login-row">
+                <div class="login-brand-box">
+                    <a class="login-brand">Talkent</a>
+                </div>
+                <label for="" class="label">نام و نام خانوادگی</label>
+                <input type="text" style="direction: rtl;" class="input-login-box" name="register_f_name">
+                <label for="" class="label">شماره همراه</label>
+                <input type="text" class="input-login-box" name="register_phone_number">
+                <label for="" class="label">رمز عبور</label>
+                <input type="password" class="input-login-box" name="register_password">
+                <a href="#" class="login-link">ورود به حساب</a>
+                <input id="register-submit" type="submit" value="ثبت نام" class="submit-login-btn">
+                <span class="login-err-msg"></span>
+            </div>
+        </section>
+
+        <!-- profile -->
+        <section class="profile profile-section mt-3">
+            <div class="profile-row">
+                <div class="login-brand-box">
+                    <a class="login-brand mb-3">پروفایل</a>
+                </div>
+                <label for="" class="label">نام و نام خانوادگی</label>
+                <input type="text" style="direction: rtl;" class="input-login-box" name="profile_f_name">
+                <label for="" class="label">شماره همراه</label>
+                <input type="text" class="input-login-box" name="profile_phone_number">
+                <label for="" class="label">رمز عبور</label>
+                <input type="text" class="input-login-box" name="profile_password">
+                <input id="edit-submit" type="submit" value="ویرایش اطلاعات" class="submit-login-btn mt-4">
+                <input id="logout-submit" type="submit" value="خروج از حساب" class="submit-login-btn mt-2">
+                <span class="login-err-msg"></span>
+            </div>
+        </section>
+    </div>
+
+    <!-- script -->
+    <script src="./js/index.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
