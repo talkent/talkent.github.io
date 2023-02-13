@@ -122,6 +122,11 @@ a {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   background-color: #77008f;
+  transition: all 0.3s;
+}
+
+.login-nav-btn:hover {
+  background-color: #c006e6;
 }
 
 .login-name {
@@ -131,4 +136,39 @@ a {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   background-color: #77008f;
+  transition: all 0.3s;
+}
+
+.login-name:hover {
+  background-color: #c006e6;
+}
+
+.description-section {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.start-link {
+  color: #fff;
+  background-color: #77008f;
+  display: block;
+  text-align: center;
+  padding: 0.4rem 0;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.start-link:hover {
+  background-color: #c006e6;
+}
+
+.description-title {
+}
+
+.description-text {
+  margin: 1.5rem 0;
+  line-height: 1.6rem;
 }
