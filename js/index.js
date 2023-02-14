@@ -15,6 +15,7 @@ $(document).ready(function () {
   $('.register').css('display', 'none');
   $('.profile').css('display', 'none');
   $('.about-us-section').css('display', 'none');
+  $('.contact-section').css('display', 'none');
   $('.home-link').css({ color: '#c006e6' });
   $('.description-section').css({
     display: 'flex',
@@ -27,6 +28,7 @@ $(document).ready(function () {
     $('.register').css('display', 'none');
     $('.profile').css('display', 'none');
     $('.about-us-section').css('display', 'none');
+    $('.contact-section').css('display', 'none');
     $('.description-section').css({
       display: 'flex',
       'justify-content': 'space-around',
@@ -37,7 +39,9 @@ $(document).ready(function () {
   $('.login-nav-btn').click(function () {
     $('.login-err-msg').css('display', 'none').text('');
     $('.description-section').css('display', 'none');
+    $('.about-us-section').css('display', 'none');
     $('.landing').css('display', 'none');
+    $('.contact-section').css('display', 'none');
     $('.login').css({
       display: 'flex',
       'justify-content': 'center',
@@ -236,6 +240,16 @@ $(document).ready(function () {
     $('.description-section').css('display', 'none');
     $('.landing').css('display', 'block');
     $('.about-us-section').css({
+      display: 'block',
+    });
+  });
+
+  $('.contact-link').click(function () {
+    $('.login-err-msg').css('display', 'none').text('');
+    $('.description-section').css('display', 'none');
+    $('.landing').css('display', 'block');
+    $('.about-us-section').css('display', 'none');
+    $('.contact-section').css({
       display: 'block',
     });
   });
