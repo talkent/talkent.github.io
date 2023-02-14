@@ -14,6 +14,7 @@ $(document).ready(function () {
   $('.login').css('display', 'none');
   $('.register').css('display', 'none');
   $('.profile').css('display', 'none');
+  $('.about-us-section').css('display', 'none');
   $('.home-link').css({ color: '#c006e6' });
   $('.description-section').css({
     display: 'flex',
@@ -25,6 +26,12 @@ $(document).ready(function () {
     $('.login').css('display', 'none');
     $('.register').css('display', 'none');
     $('.profile').css('display', 'none');
+    $('.about-us-section').css('display', 'none');
+    $('.description-section').css({
+      display: 'flex',
+      'justify-content': 'space-around',
+      'align-items': 'center',
+    });
   });
 
   $('.login-nav-btn').click(function () {
@@ -103,6 +110,7 @@ $(document).ready(function () {
           $('input[name=login_f_name]').val('');
           $('input[name=login_phone_number]').val('');
           $('input[name=login_password]').val('');
+          $('.login-err-msg').css('display', 'none').text('');
         } else {
           $('.login-err-msg')
             .css('display', 'block')
@@ -172,6 +180,7 @@ $(document).ready(function () {
     });
     $('input[name=profile_f_name]').val(getCookie('fullname'));
     $('input[name=profile_phone_number]').val(getCookie('phone'));
+    $('.login-err-msg').css('display', 'none').text('');
   });
 
   $('#edit-submit').click(function () {
@@ -220,6 +229,15 @@ $(document).ready(function () {
       'align-items': 'center',
     });
     $('body .container').addClass('login-center');
+  });
+
+  $('.about-link').click(function () {
+    $('.login-err-msg').css('display', 'none').text('');
+    $('.description-section').css('display', 'none');
+    $('.landing').css('display', 'block');
+    $('.about-us-section').css({
+      display: 'block',
+    });
   });
 
   // functions
